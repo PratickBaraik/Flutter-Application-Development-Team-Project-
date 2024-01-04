@@ -1,0 +1,27 @@
+There are four types of comments in dart
+
+1. Documentation comments
+
+/// 
+
+Used to write Documentation
+
+2. Multi-line comments
+
+/* 
+*
+*/
+
+Used to write multi-line comments
+
+3. Normal single line comments
+
+//
+
+Used to write single line comments
+
+4. TODO comments
+
+// TODO: 
+
+Helps to track and note the to-do stuffs in dart code
