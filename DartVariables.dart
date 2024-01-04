@@ -33,11 +33,38 @@ void main() {
   print("First boolean value: $booleanValue");
   print("Second boolean value: $VarBoolean\n");
 
-  // declaring dynamic variable
-  print("Dynamic variable");
-  dynamic dynamicValue = "It can store any type of value like var";
-  dynamicValue = "And can be modified anywhere in the program";
+  // comparing and constrasting var and dynamic variables
 
-  // printing the result
-  print("Dynamic variable: $dynamicValue");
+/*
+
+  var                                     dynamic
+  1. it is a keyword and not a type       1. it is a keyword and stand alone type
+  2. provides static type checking with   2. stops dart analyzer and runtime type checking
+  dart analyzer
+  3. givex compile time error             3. throws run time exception
+
+*/
+
+  // var keyword
+  print("\nVar keyword");
+  var varValue = 10;
+  // varValue = 20;
+  print(varValue.runtimeType);
+
+  /*
+  Value = "String"; // compile time erro: string cannot be initialized in the variable type of int
+  print(Value.runtimeType);
+  */
+
+  // dynamic type
+  print("\nDynamic type");
+  dynamic dynamicValue = 100;
+  // print(dynamicValue.toUpperCase);  // throws exception: class 'int' hax no instance getter 'toUpperCase'
+  print(dynamicValue.runtimeType);
+
+  dynamicValue = "User";
+  print(dynamicValue.runtimeType);
+
+  dynamicValue = 778.213; // double value
+  print(dynamicValue.runtimeType);
 }
