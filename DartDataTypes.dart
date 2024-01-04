@@ -7,12 +7,14 @@
 ///
 /// Multi Value Type: List, Set, Map
 
-
 void main() {
-
   // Number data type
   int IntegerVar = 100;
-  print("IntegerVar: $IntegerVar");
+  print("Integer Value: $IntegerVar");
+
+  double DoubleVar = 89.23;
+  print("Double value: $DoubleVar");
+
+  // String data type 
   
 }
-
